@@ -40,8 +40,8 @@ bash
 ```
 from roboflow import Roboflow
 
-rf = Roboflow(api_key="YOUR_API_KEY")
-project = rf.workspace("workspace-name").project("project-name")
+rf = Roboflow(api_key="lL56ENgbETMdUDoZ6lw2")
+project = rf.workspace("sushinthas-workspace").project("crop-disease-srixo-0iros")
 version = project.version(1)
 dataset = version.download("yolov8")
 ```
