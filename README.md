@@ -45,7 +45,7 @@ project = rf.workspace("workspace-name").project("project-name")
 version = project.version(1)
 dataset = version.download("yolov8")
 ```
-## Model Training
+### Model Training
 
 The YOLOv8 model is trained using the following configuration:
 
