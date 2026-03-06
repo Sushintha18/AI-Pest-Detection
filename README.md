@@ -40,7 +40,7 @@ bash
 ```
 from roboflow import Roboflow
 
-rf = Roboflow(api_key="lL56ENgbETMdUDoZ6lw2")
+rf = Roboflow(api_key="YOUR_API_KEY_HERE")
 project = rf.workspace("sushinthas-workspace").project("crop-disease-srixo-0iros")
 version = project.version(1)
 dataset = version.download("yolov8")
@@ -76,7 +76,7 @@ The trained model can detect crop diseases in images and highlight them with bou
 
 Example output:
 
-
+![Detection Output](result.png)
 
 ### Applications
 
