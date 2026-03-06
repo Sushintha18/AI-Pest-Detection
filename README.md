@@ -44,14 +44,15 @@ rf = Roboflow(api_key="YOUR_API_KEY")
 project = rf.workspace("workspace-name").project("project-name")
 version = project.version(1)
 dataset = version.download("yolov8")
-Model Training
+```
+## Model Training
 
 The YOLOv8 model is trained using the following configuration:
 
+bash
+```
 from ultralytics import YOLO
-
 model = YOLO("yolov8n.pt")
-
 model.train(
     data="/content/crop-disease-1/data.yaml",
     epochs=50,
